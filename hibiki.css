@@ -1,0 +1,70 @@
+
+/* base variables */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&family=M+PLUS+1p&display=swap');
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      18px;
+  --body-size:       0.85rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    12px;
+  /*-- Main font colors --*/
+  --title-color:     #02141c;
+  --header-color:    #02141c;
+  --body-color:      #02141c;
+  --aside-color:     #02141c;
+  --fig-cap-color:   #02141c;
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    'Open Sans', 'M PLUS 1p', sans-serif;
+  --mono-font:       Inconsolata, monospace;
+  --body-font:       'Open Sans', 'M PLUS 1p', sans-serif;
+  --navbar-font:     'Open Sans', 'M PLUS 1p', sans-serif;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   #02141c;
+  --body-size:       0.8rem;
+  --body-color:      #02141c;
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    14px;
+  --contents-size:   12px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    14px;
+  --heading-color:   #02141c;
+  --text-size:       0.8em;
+  --text-color:      #02141c;
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       16px;
+  --text-color:       #02141c;
+  --text-size:        13px;
+  --hover-color:      #dd424c;
+  --bkgd-color:       rgba(250, 250, 251, 0.8);
+}
+
+.distill-site-footer {
+  --text-color:       #02141c;
+  --text-size:        11px;
+  --hover-color:      #dd424c;
+  --bkgd-color:       #ffffff;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+code {
+  font-family: 'Open Sans', 'M PLUS 1p', sans-serif !important;
+}

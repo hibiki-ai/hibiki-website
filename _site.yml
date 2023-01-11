@@ -1,0 +1,21 @@
+name: "hibiki-website"
+title: "Hibiki AI"
+description: |
+  Hibiki AI
+favicon: favicon.png
+navbar:
+  logo:
+    image: favicon.png
+    href: https://hibiki-ai.com
+  search: false
+  right:
+    - text: "Map"
+      icon: fas fa-map
+      href: map.html
+    - text: "contact"
+      icon: fas fa-envelope
+      href: mailto:info@hibiki-ai.com
+base_url: https://hibiki-ai.com/
+output: distill::distill_article
+output_dir: "docs"
+theme: hibiki.css

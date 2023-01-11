@@ -1,0 +1,9 @@
+---
+title: "Hibiki AI"
+site: distill::distill_website
+css: index.css
+---
+
+<div class="l-screen">
+  <img alt="background image" src="img/background.jpg" />
+</div>

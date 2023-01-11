@@ -1,0 +1,19 @@
+---
+title: "Hibiki AI Limited"
+---
+
+Address: 184 Cambridge Science Park, Milton Road, Cambridge, CB4 0GA
+
+Email: info@hibiki-ai.com
+
+```{r leaflet, echo=FALSE, layout="l-screen-inset shaded"}
+
+library(leaflet)
+library(magrittr)
+
+leaflet() %>%
+  addTiles() %>%
+  setView(lng = 0.14589, lat = 52.23385, zoom = 18)
+```
+
+
