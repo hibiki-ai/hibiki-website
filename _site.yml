@@ -12,7 +12,7 @@ navbar:
     - text: "Map"
       icon: fas fa-map
       href: map.html
-    - text: "contact"
+    - text: "Contact"
       icon: fas fa-envelope
       href: mailto:info@hibiki-ai.com
 base_url: https://hibiki-ai.com/
