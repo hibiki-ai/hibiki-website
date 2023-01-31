@@ -16,4 +16,3 @@ leaflet() %>%
   setView(lng = 0.14589, lat = 52.23385, zoom = 18)
 ```
 
-
