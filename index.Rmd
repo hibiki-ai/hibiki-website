@@ -13,6 +13,8 @@ css: index.css
   
 # / hɪˈbɪˈkiː /
 
+##### n. resounding
+
 <br />
 
 ## a research-first organisation
