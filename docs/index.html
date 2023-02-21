@@ -1890,10 +1890,46 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
   </style>
-  <style type="text/css">
-  /* base variables */
+  <style type="text/css">/* base variables */
 
-  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&family=M+PLUS+1p&display=swap');
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Red Hat Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/red-hat-mono-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/red-hat-mono-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/red-hat-mono-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/red-hat-mono-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/red-hat-mono-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/red-hat-mono-v10-latin-regular.svg#RedHatMono') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/open-sans-v34-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/open-sans-v34-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/open-sans-v34-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/open-sans-v34-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/open-sans-v34-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'M PLUS 1';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/m-plus-1-v6-japanese-regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/m-plus-1-v6-japanese-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/m-plus-1-v6-japanese-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/m-plus-1-v6-japanese-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/m-plus-1-v6-japanese-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/m-plus-1-v6-japanese-regular.svg#MPLUS1') format('svg'); /* Legacy iOS */
+  }
 
   html {
     /*-- Main font sizes --*/
@@ -1912,7 +1948,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --heading-font:    'Open Sans', 'M PLUS 1p', sans-serif;
     --mono-font:       Inconsolata, monospace;
     --body-font:       'Open Sans', 'M PLUS 1p', sans-serif;
-    --navbar-font:     'Open Sans', 'M PLUS 1p', sans-serif;  /* websites + blogs only */
+    --navbar-font:     'Red Hat Mono', 'Open Sans', 'M PLUS 1p', sans-serif;  /* websites + blogs only */
   }
 
   /*-- ARTICLE METADATA --*/
@@ -1941,9 +1977,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* These properties only apply to Distill sites and blogs  */
 
   .distill-site-header {
-    --title-size:       18px;
+    --title-size:       16px;
     --text-color:       #02141c;
-    --text-size:        13px;
+    --text-size:        14px;
     --hover-color:      #dd424c;
     --bkgd-color:       rgba(250, 250, 251, 0.8);
   }
@@ -1954,12 +1990,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --hover-color:      #dd424c;
     --bkgd-color:       #ffffff;
   }
-
-  /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */
-  code {
-    font-family: 'Open Sans', 'M PLUS 1p', sans-serif !important;
-  }</style>
+  </style>
   <style type="text/css">
   /* base style */
 
@@ -2199,8 +2230,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-screen">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b42bddf8ad5d2a10f2f6" style="width:624px;height:384px;"></div>
-<script type="application/json" data-for="htmlwidget-b42bddf8ad5d2a10f2f6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[52.23385,0.14589],18,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-72601d4de1c09dec8655" style="width:624px;height:384px;"></div>
+<script type="application/json" data-for="htmlwidget-72601d4de1c09dec8655">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[52.23385,0.14589],18,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
