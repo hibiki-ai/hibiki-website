@@ -8,14 +8,16 @@ css: index.css
   <img alt="background image" src="img/background.jpg" />
 
   <div class="intro">
-  <br />
+  <br /><br /><br />
   <img alt="Hibiki logo" src="hibiki.png" />
+  <br />
   
 # / hɪˈbɪˈkiː /
 
 ##### n. resounding
 
-<br />
+<br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br />
 
 ## a research-first organisation
 ## using advances in machine learning
