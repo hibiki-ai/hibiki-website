@@ -9,9 +9,6 @@ navbar:
     href: https://hibiki-ai.com
   search: false
   right:
-    - text: "Map"
-      icon: fas fa-map
-      href: map.html
     - text: "Contact"
       icon: fas fa-envelope
       href: mailto:info@hibiki-ai.com
